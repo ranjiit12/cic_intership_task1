@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+</head>
+<body>
+    <div id ="container">
+    <p id ="1">I'm nothing like p tag</p>
+    <p id ="2">I'm some what like p tag</p>
+    <p id ="3"> I hate  p tag...</p>
+  </div>
+  <button onclick="onBtnClicked()">Click Me</button>
+ <script >
+     function onBtnClicked(){
+           document.getElementById("1").style.color = "green";
+           document.getElementById("2").style.backgroundColor ="blue";
+           var container =document.getElementById("container");
+           container.insertAdjacentHTML("beforeend","<h2> Well, here I'm </h2>");
+     }
+ </script>    
+</body>
+</html>

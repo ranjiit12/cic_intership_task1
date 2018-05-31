@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+</head>
+<body>
+    <form id ="form">
+        <input  id ="input" type ="text" />
+        <input id ="submit" type ="submit" />
+    </form>
+    <script>
+    String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);}
+    var form  = document.getElementById("form");
+    var input = document.getElementById("submit");
+    function onSubmit(event){
+      event.preventDefault();
+      console.log(input.value.capitalize());
+  }   
+  form.addEventListener("submit", onSubmit, false);
+  input.addEventListener("submit", onSubmit, false);
+    console.log("well good Enou not".capitalize());
+    </script>
+</body>
+</html>
